@@ -15,6 +15,9 @@ void CStatePoster::Init()
 {
 	Log("\nState Poster: Init");
 	m_pSurface = new CSurface("resource/background.jpg", 640, 480);
+
+	//m_pTexture = new CTexture("resource/background.jpg");
+
 	//m_pSurface1 = new CSurface("resource/background1.jpg", 640, 480);
 	//m_pSurface->Init(640, 480);
 }
@@ -41,7 +44,9 @@ void CStatePoster::Render()
 		m_pSurface1->Render();
 	}*/
 
+
 	m_pSurface->Render(NULL, NULL);
+	//m_pTexture->Render();
 
 	Log("State Logo: %d Fps = %d FrameDT = %.9f",
 		m_iCount,
@@ -53,7 +58,7 @@ void CStatePoster::Render()
 void CStatePoster::Exit()
 {
 	SAFE_DELETE(m_pSurface);
-
+	//SAFE_DELETE(m_pTexture);
 	/*m_pSurface1->Destroy();
 	SAFE_DELETE(m_pSurface1);*/
 	Log("\nState Poster: Exit");

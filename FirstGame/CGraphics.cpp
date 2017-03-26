@@ -82,7 +82,7 @@ HRESULT CGraphics::ShowBackbuffer()
 
 void CGraphics::ClearBackbuffer()
 {
-	m_lpDirect3DDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 255, 0), 0.0f, 0); // Display backbuffer to screen   
+	m_lpDirect3DDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 0.0f, 0); // Display backbuffer to screen   
 }
 
 //======================================================================== 

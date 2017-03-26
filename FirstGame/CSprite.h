@@ -10,10 +10,13 @@ public:
 	~CSprite();
 
 public:
-
+	bool Init();
+	void Destroy();
+	void Render();
+	void Update();
 
 protected:
-
+	LPD3DXSPRITE m_lpSprite;
 
 };
 

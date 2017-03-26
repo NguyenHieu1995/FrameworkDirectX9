@@ -3,6 +3,7 @@
 
 #include "CState.h"
 #include "CSurface.h"
+#include "CTexture.h"
 
 class CStatePoster : public GameTutor::CState
 {
@@ -20,6 +21,7 @@ private:
 	int m_iCount;
 	CSurface* m_pSurface;
 	//CSurface* m_pSurface1;
+	//CTexture* m_pTexture;
 
 };
 

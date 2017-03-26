@@ -23,7 +23,7 @@ protected:
 	LPDIRECT3DTEXTURE9 m_lpTexture;
 	D3DXIMAGE_INFO m_infoTexture;
 	HRESULT hr;
-
+	LPD3DXSPRITE m_lpSprite;
 };
 
 #endif

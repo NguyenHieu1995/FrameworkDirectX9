@@ -162,6 +162,9 @@ namespace GameTutor
 			//Xoa bo dem backbuffer
 			CGraphics::GetInstance()->ClearBackbuffer();
 			
+			//Bat dau ve bang directx 
+			CGraphics::GetInstance()->GetDevice()->BeginScene();
+
 			// handle win32 message
 			MSG msg;
 			if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
@@ -185,6 +188,8 @@ namespace GameTutor
 				return;
 			}
 
+			//Ket thuc ve bang directx
+			CGraphics::GetInstance()->GetDevice()->EndScene();
 			//update Graphics
 			CGraphics::GetInstance()->ShowBackbuffer();
 			DispatchMessage(&msg);
